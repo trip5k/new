@@ -1,0 +1,105 @@
+.products {
+
+}
+
+
+.products__category {
+    padding: 52px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.products__category__title {
+    color: #505050;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    line-height: 130%;
+    text-align: center;
+    font-size: 24px;
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 760px) {
+    .products__category {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 96px 88px 88px;
+    }
+    .products__category__title {
+        font-size: 40px;
+    }
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "large1 large2 large2"
+        "small1 small2 small3";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card.large {
+    height: 500px;
+}
+
+.card.small {
+    height: 400px;
+}
+
+.card.large:first-child {
+    grid-area: large1;
+}
+
+.card.large:nth-child(2) {
+    grid-area: large2;
+}
+
+.card.small:nth-child(3) {
+    grid-area: small1;
+}
+
+.card.small:nth-child(4) {
+    grid-area: small2;
+}
+
+.card.small:nth-child(5) {
+    grid-area: small3;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    color: #555;
+}

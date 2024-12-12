@@ -1,0 +1,17 @@
+.hero {
+    height: 507px;
+    padding: 58px 24px;
+    background-image: url('../../assets/images/hero-background.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+@media screen and (min-width: 760px) {
+    .hero {
+        height: 813px;
+    }
+}
